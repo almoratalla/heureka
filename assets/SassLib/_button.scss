@@ -1,0 +1,186 @@
+@import "config";
+@import "color--config";
+
+%btn{
+    display: inline-block;
+    text-decoration: none;
+
+}
+%btn-flat{
+
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    padding: 10px 20px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+%btn-rectangle{
+
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    margin: 3px;
+    padding: 10px 20px;
+}
+
+%btn-oval{
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    margin: 3px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+%btn-long{
+    padding: 10px 60px;
+}
+
+.btn-primary{
+    @extend %btn;       
+    @extend %btn-flat;    
+    @include set-bg-color($primary-btn-bg-color,#333,#fff);
+    &:focus{
+        @include set-outline-btn($primary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($primary-btn-bg-color);
+    }
+
+}
+.btn-secondary{
+    @extend %btn;
+    @extend %btn-flat;    
+    @include set-bg-color($secondary-btn-bg-color,#333,#fff);
+    &:focus{
+        @include set-outline-btn($secondary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($secondary-btn-bg-color);
+    }
+}
+.btn-tertiary{
+    @extend %btn;
+    @extend %btn-flat;    
+    @include set-bg-color($tertiary-btn-bg-color,#333,#fff);
+    &:focus{
+        @include set-outline-btn($tertiary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($tertiary-btn-bg-color);
+    }
+}
+
+.btn-secondary--rectangle{
+    @extend %btn;
+    @extend %btn-rectangle;    
+    @include set-bg-color($secondary-btn-bg-color,#333,#fff);
+    &:focus{
+        @include set-outline-btn($secondary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($secondary-btn-bg-color);
+    }
+}
+
+.btn-tertiary--rectangle{
+    @extend %btn;
+    @extend %btn-rectangle;    
+    @include set-bg-color($tertiary-btn-bg-color,#333,#fff);
+    &:focus{
+        @include set-outline-btn($tertiary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($tertiary-btn-bg-color);
+    }
+}
+
+.btn-primary--oval{
+    @extend %btn;
+    @extend %btn-oval;
+    @include set-bg-color($primary-btn-bg-color, #333, #fff);
+    &:focus{
+        @include set-outline-btn($primary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($primary-btn-bg-color);
+    }
+}
+
+.btn-secondary--oval{
+    @extend %btn;
+    @extend %btn-oval;
+    @include set-bg-color($secondary-btn-bg-color, #333, #fff);
+    &:focus{
+        @include set-outline-btn($secondary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($secondary-btn-bg-color);
+    }
+}
+
+.btn-tertiary--oval{
+    @extend %btn;
+    @extend %btn-oval;
+    @include set-bg-color($tertiary-btn-bg-color, #333, #fff);
+    &:focus{
+        @include set-outline-btn($tertiary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($tertiary-btn-bg-color);
+    }
+}
+
+.btn-primary--oval--long{
+    @extend %btn;
+    @extend %btn-oval;
+    @extend %btn-long;
+    @include set-bg-color($primary-btn-bg-color, #333, #fff);
+    &:focus{
+        @include set-outline-btn($primary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($primary-btn-bg-color);
+    }
+}
+
+.btn-secondary--oval--long{
+    @extend %btn;
+    @extend %btn-oval;
+    @extend %btn-long;
+    @include set-bg-color($secondary-btn-bg-color, #333, #fff);
+    &:focus{
+        @include set-outline-btn($secondary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($secondary-btn-bg-color);
+    }
+}
+
+.btn-tertiary--oval--long{
+    @extend %btn;
+    @extend %btn-oval;
+    @extend %btn-long;
+    @include set-bg-color($tertiary-btn-bg-color, #333, #fff);
+    &:focus{
+        @include set-outline-btn($tertiary-btn-bg-color);
+        transform: scale(.98);
+    }
+    &:hover{
+        background-color: darken-lighten($tertiary-btn-bg-color);
+    }
+}
+
+
+
+
+
+
+
+

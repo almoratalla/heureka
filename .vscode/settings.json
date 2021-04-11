@@ -1,0 +1,20 @@
+{
+    "eslint.enable": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/assets/styles"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "window.zoomLevel": 0,
+    "php.validate.executablePath": "",
+    "php.validate.enable": false,
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.autoprefix": []
+}

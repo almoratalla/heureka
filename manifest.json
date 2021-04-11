@@ -1,0 +1,20 @@
+{
+    "name": "Heureka",
+    "short_name": "heureka",
+    "start_url": ".",
+    "background_color": "#eb9d02",
+    "theme_color": "#f5c058",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "assets/images/logo192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/images/logo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

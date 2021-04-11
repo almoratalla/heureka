@@ -1,0 +1,49 @@
+$font-stack:'Roboto', sans-serif;
+
+
+
+
+
+//set the background color
+@mixin set-bg-color($color,$light,$night) {
+    background-color: $color;
+    color: set-txt-color($color,$light,$night);
+}
+
+//set text color
+@function set-txt-color($color,$light,$night)
+{
+    @if(lightness($color) > 50){
+        @return $light;
+    }
+    @else{
+        @return $night;
+    }
+}
+
+//darken or lighten
+@function darken-lighten($color){
+    @if(lightness($color) > 25){
+        @return darken($color,10%);
+    }
+    @else{
+        @return lighten($color,10%);
+    }
+}
+
+
+//creating a border to take the place of outline
+@function set-border-as-outline($color){
+    @if(lightness($color) > 25){
+        @return solid 3px darken($color, 18%);
+    }
+    @else{
+        @return solid 3px lighten($color, 18%);
+    }
+}
+
+@mixin set-outline-btn($color){
+    outline: none;
+    padding: 7px 17px;
+    border: set-border-as-outline($color);
+}

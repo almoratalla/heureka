@@ -1,0 +1,25 @@
+@import 'config';
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    font-family: $font-stack;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    height: 100%;
+    width: 100%;
+    // @include set-bg-color(--body--bg-color,$text-color--light,$text-color--night);
+    background-color: var(--body--bg-color);
+    color: var(--body--text-color);
+}
+
+.container{
+    overflow: auto;
+    margin: 0 auto;
+}

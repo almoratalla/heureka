@@ -1,0 +1,51 @@
+
+.contactUs-wrap{
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgb(197, 194, 194);
+    text-align: center;
+    .contactUs--title{
+        margin: 40px 0;
+        font-size: 36px;
+    }
+    .contactUs{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-width: 300px;
+        padding: 30px;
+        background-color: rgb(139, 136, 136);
+        margin: auto;
+        margin-bottom: 60px;
+        &--form{
+            display: flex;
+            flex-direction: column;
+            padding: 0 5%;
+            &--name{
+                display: flex;
+                justify-content: space-between;
+                .firstName,
+                .lastName{
+                    width: 48%;
+                    padding: 15px;
+                }
+                margin: 15px 0;
+            }
+            &--email{
+                margin: 15x 0;
+                padding: 15px;
+            }
+
+            &--message{
+                margin: 15px 0;
+                padding: 15px;
+                color: gray;
+            }
+        }
+        &--submit{
+            margin-left: 30px;
+            border: none;
+            width: 120px;
+        }
+    }
+}

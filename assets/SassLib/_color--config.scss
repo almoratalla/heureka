@@ -1,0 +1,28 @@
+//button colors
+$primary-btn-bg-color: rgb(196, 141, 41);
+$secondary-btn-bg-color: #eac36c ;
+$tertiary-btn-bg-color: rgb(24, 87, 24);
+
+//navbar colors
+$navbar--background-color: #83305a;
+$navbar--primary-color: #1e07b3;
+$navbar--secondary-color:#eac36c;
+$navbar--accent-color:#fff8b5;
+$navbar--text-color: white;
+
+//general colors
+$bg-color--night: #1a1a1a;
+$text-color--night:#f2f2f2;
+$bg-color--light:#f2f2f2;
+$text-color--light: #1a1a1a;
+
+//data-theme colors
+body{
+    --body--bg-color: #f2f2f2;
+    --body--text-color: #1a1a1a;
+}
+
+body[data-theme='night']{
+    --body--bg-color: #1a1a1a;
+    --body--text-color: #f2f2f2;
+}
