@@ -1,0 +1,53 @@
+@import 'config';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $font-stack;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--body--bg-color);
+    color: var(--body--text-color)
+}
+
+.container{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 90%;
+}
+
+section.hero{
+    width: 100%;
+    height:500px;
+    background-color: rgb(103, 103, 204);
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 80%;
+    }
+
+    section.hero{
+        height:600px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 75%;
+    }
+
+    section.hero{
+        height:700px;
+    }
+}
